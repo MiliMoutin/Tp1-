@@ -8,7 +8,6 @@ int parseCmdLine(int argc, char* argv[],pCallback parseCallBack, void *userData)
 	 /*chequear caso que no haya nada!!!*/
 	for(;argCount<argc && cantArgs!=EXITVALUE ;++argCount)
 	{ //ciclo corta si encuentra un error de cualquier tipo
-			printf("%s\n",argv[argCount]);
 			if(argv[argCount][0]=='-')//CASO OPCION
 			{
 					if(argv[argCount][1] == '\0')	//Analiza si el caracter siguiente al guion es vacio)
