@@ -3,7 +3,7 @@
 
 #define EXITVALUE -1
 
-typedef int (*pCallback) ( char*, char*, void*);
+typedef int (* pCallback) (char*, char*, void*);
 
 //PARSECMDLINE valida lo ingresado por linea de comando y utiliza una funcion
 // para corroborar la validez de cada dato.
@@ -16,5 +16,5 @@ typedef int (*pCallback) ( char*, char*, void*);
 //          devuelve 0 o mas equivalente a la cantidad de argumentos ingresados
 
 int parseCmdLine(int argc, char *argv[], pCallback parseCallBack, void * userData);
-
+int parseCallback(char *key, char *value, void *userData);
 #endif
